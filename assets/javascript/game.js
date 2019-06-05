@@ -10,17 +10,17 @@ $(document).ready(function() {
     var infinity5;
     var infinity6;
     
-
+// random number generator for stones
 	function newNumbers() {
 		magicNumber = Math.floor(Math.random() * 300) + 20;
-		infinity1 = Math.ceil(Math.random() * 5);
-		infinity2 = Math.ceil(Math.random() * 10);
-		infinity3 = Math.ceil(Math.random() * 15);
-        infinity4 = Math.ceil(Math.random() * 20);
-        infinity5 = Math.ceil(Math.random() * 25);
+		infinity1 = Math.ceil(Math.random() * 50);
+		infinity2 = Math.ceil(Math.random() * 50);
+		infinity3 = Math.ceil(Math.random() * 50);
+        infinity4 = Math.ceil(Math.random() * 50);
+        infinity5 = Math.ceil(Math.random() * 50);
         infinity6 = Math.ceil(Math.random() * 50);
 	}
-
+// starts the game 
 	function newGame() {
 		newNumbers();
 		totalScore = 0;
@@ -37,7 +37,8 @@ $(document).ready(function() {
 		$("#winOrLose").text("")
 		
     }
-	function youLose() {
+    // lose functions
+    function youLose() {
 		$("#winOrLose").text("YOU LOSE");
 		losses++;
         $("#losses").text(losses);
@@ -45,7 +46,7 @@ $(document).ready(function() {
 	}
 
 	newGame();
-
+// reactivety for stones
 	$(".infinitystone").hover(function() {
 		$(this).css({opacity: 0.3});
 	},
@@ -53,7 +54,7 @@ $(document).ready(function() {
 		$(this).css({opacity: 1});
 	});
 
-	// Function to add the crystal values together
+	// Function to add the stone values together
 	$(".infinitystone").on("click", function() {
 		if (totalScore >= magicNumber) {
 			return;
@@ -65,7 +66,8 @@ $(document).ready(function() {
 		$("#totalScore").text(totalScore);
 
 		if (totalScore === magicNumber) {
-			youWin();
+            youWin();
+            
 		} else if (totalScore > magicNumber) {
 			youLose();
 		}

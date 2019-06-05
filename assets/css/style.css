@@ -60,7 +60,7 @@ h1 {
 }*/
 
 #winOrLose {
-	color: hsl(272, 86%, 31%);
+	color: red;
 }
 
 .total, .scores, .directions {
