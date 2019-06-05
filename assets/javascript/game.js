@@ -12,13 +12,13 @@ $(document).ready(function() {
     
 // random number generator for stones
 	function newNumbers() {
-		magicNumber = Math.floor(Math.random() * 300) + 20;
-		infinity1 = Math.ceil(Math.random() * 50);
-		infinity2 = Math.ceil(Math.random() * 50);
-		infinity3 = Math.ceil(Math.random() * 50);
-        infinity4 = Math.ceil(Math.random() * 50);
-        infinity5 = Math.ceil(Math.random() * 50);
-        infinity6 = Math.ceil(Math.random() * 50);
+		magicNumber = Math.floor(Math.random() * 200) + 20;
+		infinity1 = Math.ceil(Math.random() * 20);
+		infinity2 = Math.ceil(Math.random() * 20);
+		infinity3 = Math.ceil(Math.random() * 20);
+        infinity4 = Math.ceil(Math.random() * 20);
+        infinity5 = Math.ceil(Math.random() * 20);
+        infinity6 = Math.ceil(Math.random() * 20);
 	}
 // starts the game 
 	function newGame() {
