@@ -44,7 +44,12 @@ $(document).ready(function() {
         $("#losses").text(losses);
        
 	}
-
+    function youWin() {
+		$("#winOrLose").text("YOU WIN");
+		wins++;
+        $("#wins").text(wins);
+       
+	}
 	newGame();
 // reactivety for stones
 	$(".infinitystone").hover(function() {
