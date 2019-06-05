@@ -4,12 +4,17 @@ html {
 
 body { 
 	min-height: 100vh;
-    background: url("../images/galaxy.jpg");
+    background: url("../images/thanoslost.jpg");
     background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: scroll;
+    background-attachment: scroll;
+    
 }
-
+#text{
+    color:whitesmoke;
+    font-family: fantasy;
+    font-size: 15px;
+}
 h3 {
 	margin: 20px 0px 10px 0px;
 	letter-spacing: 3px;
@@ -27,7 +32,8 @@ h1, h3, #magicNumber, #totalScore, #wins, #losses, .score {
 h1 {
 	color: red;
 	margin: 55px 0px 75px 0px;
-	letter-spacing: 12px;
+    letter-spacing: 12px;
+    font-family: fantasy;
 }
 
 .infinitystone {
@@ -54,7 +60,7 @@ h1 {
 }*/
 
 #winOrLose {
-	color: #a182bc;
+	color: hsl(272, 86%, 31%);
 }
 
 .total, .scores, .directions {
@@ -67,4 +73,3 @@ h1 {
 	margin-right: auto;
 	color: green;
 	letter-spacing: 3px;
-}

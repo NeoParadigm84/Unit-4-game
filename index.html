@@ -15,8 +15,8 @@
 <body>
 
 	<div class="header text-center">
-		<h1>Thanos Quest for the Infinity Stones</h1>
-		<h3>STONE POWER:</h3>
+		<h1>Thanos Quest for Infinity Stones</h1>
+		<h3>STONE POWER NEEDED:</h3>
 		<h3 id="magicNumber"></h3>
 	</div>
 	
@@ -24,28 +24,28 @@
 		
 		<div class="row">
 			<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-				<img class="infinity stone img-responsive" id="Infinity1" src="assets/images/Infinity1.jpg" alt="infinity 1"/>
+				<img class="infinitystone img-responsive" id="infinity1" src="assets/images/Infinity1.jpg" alt="infinity1"/>
 			</div>
 			<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-                    <img class="infinity stone img-responsive" id="Infinity1" src="assets/images/Infinity2.jpg" alt="infinity 2"/>
+                    <img class="infinitystone img-responsive" id="infinity2" src="assets/images/Infinity2.jpg" alt="infinity2"/>
 			</div>
 			<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-                    <img class="infinity stone img-responsive" id="Infinity1" src="assets/images/Infinity3.jpg" alt="infinity 3"/>
+                    <img class="infinitystone img-responsive" id="infinity3" src="assets/images/Infinity3.jpg" alt="infinity3"/>
 			</div>
 			<div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-                    <img class="infinity stone img-responsive" id="Infinity1" src="assets/images/Infinity4.jpg" alt="infinity 4"/>
+                    <img class="infinitystone img-responsive" id="infinity4" src="assets/images/Infinity4.jpg" alt="infinity4"/>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-                    <img class="infinity stone img-responsive" id="Infinity1" src="assets/images/Infinity5.jpg" alt="infinity 5"/>
+                    <img class="infinitystone img-responsive" id="infinity5" src="assets/images/Infinity5.jpg" alt="infinity5"/>
             </div>
             <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
-                    <img class="infinity stone img-responsive" id="Infinity1" src="assets/images/Infinity6.jpg" alt="infinity 6"/>
+                    <img class="infinitystone img-responsive" id="infinity6" src="assets/images/Infinity6.jpg" alt="infinity6"/>
 			</div>
 		</div>
 
 		<div class="row">
 			<div class="col-lg-12 directions">
-				<p>Each stone has a hidden value that will only be revealed when clicked. With each click, you will add the stone's value to your total score. You will win the game if your total score matches the magic number, and you will lose if your total score exceeds it. Good luck.</p>
+				<p id="text">Thanos is on a quest for total domination of the galaxy. He has found all 6 infinity stones but he needs your help to use them correctly. Each stone has a hidden value that will only be revealed when clicked. With each click, you will add the stone's value to your total score. You will win the game if your total score matches the stone power needed, and you will lose if your total score exceeds it. Good luck.</p>
 			</div>
 		</div>
 
@@ -55,7 +55,8 @@
 				<h3 id="totalScore"></h3>
 			</div>
 			<div class="col-lg-4 button">
-				<h3 id="winOrLose"></h3>
+                <h3 id="winOrLose"></h3>
+                <div id="image-holder"></div>
 				<button type="button" class="btn btn-light btn-lg">PLAY AGAIN</button>
 			</div>
 			<div class="col-lg-4 scores">
@@ -63,7 +64,9 @@
 				<p class="score">LOSSES: <span id="losses"></span></p>
 			</div>
 		</div>
-	</div>
+    </div>
+    
+    
 	
 </body>
 </html>
